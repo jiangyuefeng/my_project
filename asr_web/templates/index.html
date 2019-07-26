@@ -1,0 +1,42 @@
+<!DOCTYPE html > 
+<html > 
+<head>
+    <meta charset="utf-8">    
+    <script src="./static/js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="./static/js/md5.js"></script>  
+    
+    <link href="./static/css/index.css" rel="stylesheet" type="text/css">
+    <title>语音转文字</title>
+</head>
+<body>
+<form id="form1" action="" enctype="multipart/form-data" method="post">
+    <div class="uploader" id="uploader">
+         <div class="items">
+            <div class="name">音频名</div>
+            <div class="size">大小</div>
+            <div></div>
+         </div>
+         <div class="body">
+            <div class="icon" id="icon" style="display:none"></div>
+            <div class="file_Name" id="fileName"></div>
+            <div class="file_Size" id="fileSize"></div>
+            <input type="button" id="upload" value="上传" style="display:none"/> 
+            <div class="progress_Number" id="progressNumber"></div>
+            <div class="transform" id="transform">转写成文字</div>   
+         </div>
+         <div class="addaudio">
+             <a href="javascript:;" class="file">
+                <input type="file" id="file1"/>添加音频<br/>    
+             </a>      
+         </div>    
+         <textarea id="md5" style="display:none"></textarea>
+         <textarea id="uuid" style="display:none"></textarea> 
+         <div class="gettext">
+             <textarea readonly="readonly" class="text" id="text"></textarea>
+         </div>
+    </div>
+</form>
+    
+    <script src="./static/js/upload.js"></script>
+</body>
+</html>

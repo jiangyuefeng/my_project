@@ -1,0 +1,145 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    font-family: PingFangSC-Semibold,"Microsoft YaHei",Arial,sans-serif,Helvetica,STHeiti;
+    letter-spacing: 0;
+    color: #000;
+    background-color: #fff;
+    min-width: 960px
+  }
+
+  .uploader{
+    clear: both;
+    width: 1160px;
+    position: relative;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  .items{
+    padding: 20px 25px 21px;
+    border: 1px solid #DBDDE3;
+    border-radius: 4px;
+    margin-top:40px;
+    margin-bottom: 5px;
+  }
+
+  .name,.size{
+    float:left;
+    width:330px;
+    color: rgb(97, 95, 95);
+    font-size: 16px;
+  }
+
+  .body{
+    padding: 20px 25px 21px;
+    border: 1px solid #DBDDE3;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    height:25px;
+  }
+  
+  .icon{
+    position: absolute;
+    width: 25px;
+    height: 27px;
+    background: url("/static/img/icon_file.png");
+    background-size: contain;
+    display:none;
+  }
+
+  .file_Name{
+    color: #333;
+    font-size: 16px;
+    float:left;
+    overflow: hidden;
+    margin-left:30px;                                       
+    word-wrap:normal;
+    white-space: nowrap;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    width: 270px;
+  }
+
+  .file_Size,.progress_Number{
+    color: #333;
+    font-size: 16px;
+    float:left;
+    overflow: hidden;                                        
+    word-wrap:normal;
+    white-space: nowrap;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    width: 270px;
+  }
+
+  .file {
+    width:1040px;
+    position: relative;
+    display: inline-block;
+    background: #D0EEFF;
+    border: 1px solid #99D3F5;
+    border-radius: 4px;
+    padding: 4px 12px;
+    overflow: hidden;
+    color: #1E88C7;
+    text-decoration: none;
+    text-indent: 0;
+    line-height: 20px;
+    text-align:center;
+    margin-left: 40px;
+}
+.file #file1{
+    position: absolute;
+    font-size: 100px;
+    right: 0;
+    top: 0;
+    opacity: 0;
+}
+.file:hover {
+    background: #AADFFD;
+    border-color: #78C3F3;
+    color: #004974;
+    text-decoration: none;
+}
+
+.transform {
+  position: relative;
+  display: inline-block;
+  background: #D0EEFF;
+  border: 1px solid #99D3F5;
+  border-radius: 4px;
+  width:120px;
+  padding-top:5px;
+  padding-bottom:5px;
+  overflow: hidden;
+  color: #1E88C7;
+  text-decoration: none;
+  text-indent: 0;
+  line-height: 20px;
+  display:none;
+  text-align:center;
+}
+.transform:hover {
+  background: #AADFFD;
+  border-color: #78C3F3;
+  color: #004974;
+  text-decoration: none;
+}
+
+.text{
+  padding: 20px 25px 21px;
+  margin-top: 20px;
+  width:1120px;
+  height:400px;
+  font-size: 20px;
+  resize:none;
+}
+
+#base64{
+  padding: 20px 25px 21px;
+  margin-top: 20px;
+  width:1120px;
+  height:400px;
+  font-size: 20px;
+}
